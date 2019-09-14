@@ -1,9 +1,13 @@
 import bin.Article as Article
-import bin.Tweets as Tweet
+import bin.Tweets as Tweets
+import bin.Chats as Chats
 
 #title = ["Astronomers Find Water on an Exoplanet Twice the Size of Earth"]
 #data = ["Twenty years ago, almost to the day, two competing teams of astronomers independently discovered the first known transiting exoplanet—a world that, viewed from Earth, passed across the face of its star, casting a shadow toward watchful telescopes here. Two decades later, transits have become the lifeblood of exoplanet studies, yielding thousands of worlds via space telescopes such as NASA’s Kepler and Transiting Exoplanet Survey Satellite (TESS) missions and allowing researchers not only to gauge a planet’s size and orbit but also its density and bulk composition. In short, transiting worlds have proved to be the keystones in the burgeoning search for Earth’s cosmic twins. Back in 1999, however, the notion that these exoplanetary shadows would be detectable at all was so fantastic that validating it took the separate efforts of two groups."]
 #Article.classifyArticle(title, data)
 
-tweet = ["Congratulations to #StarTrekDiscovery on their #SaturnAward win for Best Streaming Science Fiction, Action & Fantasy Series #StarTrekFamily"]
-Tweet.classifyTweet(tweet)
+#tweet = ["Congratulations to #StarTrekDiscovery on their #SaturnAward win for Best Streaming Science Fiction, Action & Fantasy Series #StarTrekFamily"]
+#Tweet.classifyTweet(tweet)
+
+#text = ["Do you want grab a coffee?"]
+#Chats.classifyChat(text)
