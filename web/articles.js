@@ -1,3 +1,4 @@
+
 function classify() {
     var title = document.getElementById("title").value;
     var article = document.getElementById("article").value;

@@ -14,6 +14,16 @@
     <script src="chats.js"></script>
     <script type="text/javascript" src="/eel.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        
+      eel.expose(consolePrint);
+      function consolePrint(textA, textB, textC) {
+        console.log(textA);
+        console.log(textB);
+        console.log(textC);
+      }
+      
+    </script>
 
   </head>
   <body>

@@ -10,27 +10,33 @@ eel.init('web')
 def classifyNewsArticle(title, article):
     title = ["" + str(title)]
     article = ["" + str(article)]
-    News.classifyNews(title, article)
+    topic, sentiment, summary = News.classifyNews(title, article)
+    eel.consolePrint(topic, sentiment, summary)
 
 @eel.expose
 def classifyArticle(title, article):
     title = ["" + str(title)]
     article = ["" + str(article)]
-    Article.classifyArticle(title, article)
+    topic, sentiment, summary = Article.classifyArticle(title, article)
+    eel.consolePrint(topic, sentiment, summary)
 
 @eel.expose
 def classifyTweet(tweet):
     tweet = ["" + str(tweet)]
-    Tweet.classifyTweet(tweet)
+    topic, sentiment = Tweet.classifyTweet(tweet)
+    eel.consolePrint(topic, sentiment)
+
 
 @eel.expose
 def classifyEmail(email):
     email = ["" + str(email)]
-    Email.classifyEmail(email)
+    topic, sentiment, urgency = Email.classifyEmail(email)
+    eel.consolePrint(topic, sentiment, urgency)
 
 @eel.expose
 def classifyChats(chat):
     chat = ["" + str(chat)]
-    Chats.classifyChat(chat)
+    topic, sentiment, urgency = Chats.classifyChat(chat)
+    eel.consolePrint(topic, sentiment, urgency)
 
 eel.start('index.html', size=(1000,600))
