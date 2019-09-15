@@ -1,0 +1,25 @@
+{
+  "name": "klassify",
+  "version": "1.0.0",
+  "description": "NLP Classifier for various text files",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvp97/Klassify.git"
+  },
+  "author": "Dhruv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruvp97/Klassify/issues"
+  },
+  "homepage": "https://github.com/dhruvp97/Klassify#readme",
+  "dependencies": {
+    "electron": "^6.0.9"
+  }
+}
