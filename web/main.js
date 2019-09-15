@@ -4,6 +4,7 @@ function printData() {
     loadingSpinner = document.getElementById("spinner");
     if(data == "News") {
         loadingSpinner.style = "color: #ffc107";
+        classifyNews();
     } else if(data == "Articles") {
         loadingSpinner.style = "color: #28a745";
     } else if(data == "Tweets") {
@@ -17,4 +18,10 @@ function printData() {
         type.value = "";
         loadingSpinner.style = "color: 	#000000";
     }
+}
+
+function classifyNews() {
+    setTimeout(function() {
+        window.open("news.html","_self");
+    }, 500);
 }
