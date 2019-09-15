@@ -20,8 +20,14 @@
       function consolePrint(textA, textB) {
         console.log(textA);
         console.log(textB);
+        var data = document.getElementById("out1");
+        var data2 = document.getElementById("out2");
+        data.value = textA;
+        data2.value = textB; 
       }
       
+
+
     </script>
 
   </head>
@@ -37,6 +43,17 @@
         <button type="button" class="btn btn-outline-primary" onclick="classify()">Classify Tweet</button>
         <button type="button" class="btn btn-outline-light" onclick="returnHome()">Home</button>
       </div>
+
+      <fieldset disabled>
+      <div class="form-group px-3 pt-3">
+        <label for="exampleFormControlInput1"><p class="lead text-white mb-0 pb-0">Analysis: </p></label>
+        <input type="text" id="out1" class="form-control px-2" placeholder="Topic">
+      </div>
+      <div class="form-group px-3 py-0.5">
+        <input type="text" id="out2" class="form-control" placeholder="Sentiment">
+      </div>
+      </form>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
